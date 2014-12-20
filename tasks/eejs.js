@@ -17,6 +17,9 @@ module.exports = function(grunt) {
     today: function(){return grunt.template.today('yyyy-mm-dd')},
     date: function(){return grunt.template.today('yyyy-mm-dd HH:MM:ss')},
     year: function(){return grunt.template.today('yyyy')},
+    author: function(){return grunt.config.get('pkg.author')},
+    version: function(){return grunt.config.get('pkg.version')},
+    homepage: function(){return grunt.config.get('pkg.homepage')},
     getPkg: function(key){return grunt.config.get('pkg.' + key)},
     getConfig: function(key){return grunt.config.get(key)}
   }
