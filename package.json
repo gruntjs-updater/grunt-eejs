@@ -1,6 +1,6 @@
 {
   "name": "grunt-eejs",
-  "description": "compile ejs templates",
+  "description": "render ejs templates",
   "version": "0.1.0",
   "homepage": "https://github.com/christophwitzko/grunt-eejs",
   "author": {

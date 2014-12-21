@@ -23,7 +23,7 @@ module.exports = function(grunt) {
     getPkg: function(key){return grunt.config.get('pkg.' + key)},
     getConfig: function(key){return grunt.config.get(key)}
   }
-  grunt.registerMultiTask('eejs', 'compile ejs templates', function() {
+  grunt.registerMultiTask('eejs', 'render ejs templates', function() {
     var options = this.options(defaultFunctions)
     var titles = grunt.config.getRaw(options.titlesConfigName) || {}
     this.files.forEach(function(f) {
