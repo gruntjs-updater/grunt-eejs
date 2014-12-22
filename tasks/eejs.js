@@ -28,8 +28,8 @@ module.exports = function(grunt) {
     var titles = grunt.config.getRaw(options.titlesConfigName) || {}
     this.files.forEach(function(f) {
       var out = f.src.map(grunt.file.read).join('')
-      options.filename = f.src[0]
-      options.title = titles[f.src[0]]
+      options.filename = f.src.pop()
+      options.title = titles[options.filename]
       grunt.file.write(f.dest, ejs.render(out, options))
       grunt.log.writeln('File ' + chalk.cyan(f.dest) + ' created.')
     })
