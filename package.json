@@ -1,7 +1,7 @@
 {
   "name": "grunt-eejs",
   "description": "render ejs templates",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "homepage": "https://github.com/christophwitzko/grunt-eejs",
   "author": {
     "name": "Christoph Witzko",

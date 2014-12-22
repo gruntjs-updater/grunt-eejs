@@ -8,8 +8,8 @@
 
 'use strict'
 
-var ejs = require('ejs')
 var chalk = require('chalk')
+var ejs = require('ejs')
 
 module.exports = function(grunt) {
   var defaultFunctions = {
