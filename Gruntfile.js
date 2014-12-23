@@ -14,6 +14,9 @@ module.exports = function(grunt) {
     pkg: grunt.file.readJSON('package.json'),
     titles: {'test/test.ejs': 'TEST'},
     eejs: {
+      options: {
+        hello: function(name){return 'Hello ' + name + '!'}
+      },
       all: {
         files: {
           'dest/test.html': 'test/test.ejs',

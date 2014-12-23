@@ -19,22 +19,6 @@ grunt.loadNpmTasks('grunt-eejs');
 
 ## The "eejs" task
 
-### Overview
-In your project's Gruntfile, add a section named `eejs` to the data object passed into `grunt.initConfig()`.
-
-```js
-grunt.initConfig({
-  eejs: {
-    options: {
-      // Task-specific options go here.
-    },
-    your_target: {
-      // Target-specific file lists and/or options go here.
-    },
-  },
-});
-```
-
 ### Options
 
 #### options.titlesConfigName
@@ -49,7 +33,9 @@ grunt.initConfig({
     'src/test.ejs': 'TEST'
   },
   eejs: {
-    options: {},
+    options: {
+      hello: function(name){return 'Hello ' + name + '!'}
+    },
     files: {
       'dest/test.html': 'src/test.ejs',
     },
