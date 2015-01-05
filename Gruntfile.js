@@ -2,7 +2,7 @@
  * grunt-eejs
  * https://github.com/christophwitzko/grunt-eejs
  *
- * Copyright (c) 2014 Christoph Witzko
+ * Copyright (c) 2015 Christoph Witzko
  * Licensed under the MIT license.
  */
 
